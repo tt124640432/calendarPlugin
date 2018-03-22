@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/css.css">
+	</head>
+
+	<body>
+		<div>
+			<select id="sel1"></select>
+			<select id="sel2"></select>
+			<div class="warpBox">
+				<ul></ul>
+				<ul></ul>
+				<ul></ul>
+				<ul></ul>
+				<ul></ul>
+				<ul></ul>
+				<ul></ul>
+			</div>
+		</div>
+		<script src='js/jquery-1.11.1.js'></script>
+		<script src='js/rili.js'></script>
+		<script>
+			$( 'div' ).rili( {
+				table: $( 'table' ),
+				td: $( '.warpBox>ul' ),
+				sel1: $( '#sel1' ),
+				sel2: $( '#sel2' )
+			} )
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+    list-style-type:none
+}
+.warpBox{
+	width: 560px;
+	height: 450px;
+	display: flex;
+	border: solid #555555 1px;
+}
+.warpBox ul{
+	flex: 1;
+	text-align: center;
+	border-right:solid #555555 1px ;
+	display: flex;
+	flex-direction: column;
+}
+.warpBox>ul:nth-last-child(1){
+	flex: 1;
+	text-align: center;
+	border-right:none ;
+}
+.warpBox ul li:nth-child(1){
+	line-height: 50px;
+	flex: 0;
+	border:none ;
+}
+
+.warpBox ul li{
+	line-height: 50px;
+	min-height: 50px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: solid #555555 1px;
+}
